@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Income and Outcome</title>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Income</h5>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Product</th>
+                      <th>Quantity</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Water</td>
+                      <td><input type="number" class="form-control" value="0" min="0" id="water" onchange="calculateTotal();"></td>
+                      <td>$1.00</td>
+                    </tr>
+                    <tr>
+                      <td>Bread</td>
+                      <td><input type="number" class="form-control" value="0" min="0" id="bread" onchange="calculateTotal();"></td>
+                      <td>$2.50</td>
+                    </tr>
+                    <tr>
+                      <td>Apple</td>
+                      <td><input type="number" class="form-control" value="0" min="0" id="apple" onchange="calculateTotal();"></td>
+                      <td>$1.20</td>
+                    </tr>
+                    <tr>
+                      <td>Pizza</td>
+                      <td><input type="number" class="form-control" value="0" min="0" id="pizza" onchange="calculateTotal();"></td>
+                      <td>$8.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <button class="btn btn-secondary" onclick="resetOutcome()">Reset</button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Outcome</h5>
+                  <table>
+                      <tr>
+                          <td id="waterRow"></td>
+                      </tr>
+                      <tr>
+                          <td id="breadRow"></td>
+                      </tr>
+                      <tr>
+                          <td id="appleRow"></td>
+                      </tr>
+                      <tr>
+                          <td id="pizzaRow"></td>
+                      </tr>
+                  </table>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      
+      
+
+</body>
+</html>
